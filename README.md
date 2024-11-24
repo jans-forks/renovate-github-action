@@ -74,6 +74,7 @@ The default is [renovate-entrypoint.sh](https://github.com/renovatebot/renovate/
 This option is useful to customize the image before running `renovate`.
 It must be an existing executable file on the local system.
 It will be mounted to the docker container.
+Note: This also requires `docker-user: root` to start renovate.
 
 For example you can create a simple script like this one (let's call it
 `renovate-entrypoint.sh`).
